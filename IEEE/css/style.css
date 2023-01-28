@@ -1,0 +1,115 @@
+/*CSS RESET*/ 
+*{
+    margin: 0;
+    padding: 0;
+}
+/*CSS VARIABLE*/
+:root{
+    --navbar-height: 59px;
+
+}
+/*NAVIGATION BAR*/
+#navbar{
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo Bhai','cursive';
+}
+/*Logo and Image*/
+#logo{
+    
+    margin:32px 45px
+
+}
+#logo img{
+    height :150px;
+    margin: 34px 45px;
+
+}
+/*List Styling*/
+#nvbar{
+    position:relative;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ::before{
+    content: "";
+    background-color:grey;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    display: white;
+    background-color:red;
+}
+/*Home section*/
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+#Home::before{
+    content: "";
+    background:url('../image/1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif','sherif';
+}
+.home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif','sherif';
+}
+.h-primary{
+    font-size: 4.8rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: red;
+    color: black;
+    margin:17px;
+    font-size: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#Place1 h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif','sherif';
+}    
+.PLace1 p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif','sherif';
+    
+}
